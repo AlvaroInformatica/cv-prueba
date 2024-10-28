@@ -23,21 +23,23 @@ h1 {
 }
 
 p {
-    font-size: 1.2rem;
-    color: #cccccc;
+    font-size: 3rem;
+    color: #e2ac18;
+    margin-top: 270px;
 }
 
 button {
     padding: 10px 20px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #ff0000;
     background-color: #ff7518; /* Naranja Halloween */
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-shadow: 1px 1px 3px #000000;
+    margin-top: 180px;
 }
 
 button:hover {
