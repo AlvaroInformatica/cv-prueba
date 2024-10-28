@@ -1,0 +1,99 @@
+/* Importa la fuente tenebrosa */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+/* Configuración general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Creepster', sans-serif;
+    background-color: #1c1b29; /* Fondo oscuro */
+    color: #f5f5f5;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ff7518; /* Naranja Halloween */
+    text-shadow: 3px 3px 5px #000000;
+    animation: blink 1s infinite alternate; /* Luz intermitente */
+}
+
+p {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ff7518; /* Naranja Halloween */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+button:hover {
+    background-color: #f0131e; /* Rojo oscuro al pasar */
+}
+
+/* Efecto parpadeo */
+@keyframes blink {
+    0% {
+        color: #ff7518;
+        text-shadow: 0 0 8px #ff7518, 0 0 20px #ff7518, 0 0 25px #f0131e;
+    }
+    100% {
+        color: #f0131e;
+        text-shadow: 0 0 5px #f0131e, 0 0 15px #ff7518;
+    }
+}
+
+/* Estilos de video */
+#videoContainer {
+    margin-top: 20px;
+  
+}
+
+/* Estilos de la imagen */
+#imageContainer {
+    margin-top: 20px;
+}
+
+#image {
+    max-width: 100%;
+    border: 5px solid #ff7518;
+    box-shadow: 0 0 15px #f0131e, 0 0 20px #000000;
+    border-radius: 10px;
+}
+
+/* Botón para volver */
+#closeImageButton {
+    margin-top: 15px;
+}
+
+/* Efectos de transición de visibilidad */
+.hidden {
+    display: none;
+}
+
+video {
+    width: 100%;  /* Ajustar el video al ancho del contenedor */
+    height: 100%; /* Ajustar el video a la altura del contenedor */
+    object-fit: cover;  /* Asegurar que el video cubra el contenedor manteniendo la proporción */
+}
+body {
+    background-image: url('../img/creepy.png'); /* Ruta a la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen al fondo mientras se desplaza */
+    color: white; /* Asegura que el texto sea legible en caso de fondo oscuro */
+}
